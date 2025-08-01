@@ -44,7 +44,7 @@ const CompanyInfo = () => {
 
       
       <div className="  w-full h-auto flex flex-col justify-center items-center md:flex-row  bg-black rounded-3xl gap-6">
-        {/* Left Text */}
+        
         <div className=" m-10 flex flex-col justify-center items-start  space-y-3">
           <h1
             className={`text-7xl text-start font-bold cursortext-2xl-pointer transition-colors duration-300 ${
