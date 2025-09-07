@@ -34,7 +34,7 @@ const CompanyInfo = () => {
 
   return (
     <div className="relative z-10 bg-[#EFEAE3] w-full px-4 sm:px-6 md:px-10 py-10 flex flex-col items-start gap-8">
-      {/* Button */}
+    
       <button className="relative w-32 sm:w-40 h-10 sm:h-12 border border-gray-400 rounded-3xl overflow-hidden group">
         <span className="absolute inset-0 bg-black translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out z-0" />
         <span className="cursor-pointer relative z-10 text-zinc-600 text-sm sm:text-md font-bold group-hover:text-white transition-colors duration-300">
@@ -42,9 +42,9 @@ const CompanyInfo = () => {
         </span>
       </button>
 
-      {/* Info Section */}
+     
       <div className="w-full flex flex-col md:flex-row bg-black rounded-3xl gap-6">
-        {/* Text Section */}
+  
         <div className="p-6 sm:p-10 flex flex-col justify-center items-start space-y-4 flex-1">
           <h1
             className={`text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold cursor-pointer transition-colors duration-300 ${
@@ -82,7 +82,7 @@ const CompanyInfo = () => {
           </p>
         </div>
 
-        {/* Image Section */}
+       
         <div className="w-full md:w-1/2">
           <img
             src={getImage()}

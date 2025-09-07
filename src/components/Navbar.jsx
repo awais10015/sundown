@@ -8,12 +8,12 @@ const Navbar = () => {
   return (
     <div className="relative bg-[#EFEAE3] z-20 p-6 w-full">
       <div className="flex justify-between items-center w-full">
-        {/* Logo */}
+      
         {!isMenuOpen && (
           <img src={logo} alt="Logo" className="h-16 sm:h-20 w-auto" />
         )}
 
-        {/* Desktop Nav */}
+     
         <ul className="hidden sm:flex gap-6">
           {navItems.map((item) => (
             <li key={item}>
@@ -29,7 +29,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Mobile Menu Button */}
+        
         <button
           className="z-20 sm:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -44,7 +44,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+   
       <div
         id="mobile-menu"
         className={`fixed top-20 left-0 w-full overflow-hidden transition-all duration-500 ease-in-out ${

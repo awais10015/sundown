@@ -4,13 +4,13 @@ import CompPic from "../assets/images/CompPic.webp";
 const AboutCompany = () => {
   return (
     <div className="relative w-full z-10 flex flex-col md:flex-row px-4 sm:px-6 md:px-10 gap-8 md:gap-12 py-10 bg-[#EFEAE3] text-gray-800">
-      {/* Left Text Section */}
+     
       <div className="max-w-2xl mx-auto text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold md:font-black mb-6 md:mb-0 text-start leading-snug">
         We are a group of design-driven, goal-focused creators and producers who
         believe that the details make all the difference.
       </div>
 
-      {/* Right Image + Text Section */}
+     
       <div className="flex flex-col justify-center items-center max-w-4xl mx-auto">
         <img
           src={CompPic}
