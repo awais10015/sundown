@@ -8,7 +8,7 @@ import North from '../assets/images/North.png';
 
 const CardsSection = () => {
   return (
-    <div className="w-full mb-100 overflow-x-auto scrollbar-hide z-10 bg-[#EFEAE3]">
+    <div className="relative w-full mb-100 overflow-x-auto scrollbar-hide z-10 bg-[#EFEAE3]">
       <div className="flex gap-6 px-4 py-6 w-max justify-end">
         <Card image={Nike} />
         <Card image={Converse} />

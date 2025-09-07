@@ -18,15 +18,21 @@ function App() {
       {showLoading ? (
         <LoadingScreen onFinish={() => setShowLoading(false)} />
       ) : (
-        <div className="flex flex-col justify-center items-center font-sans bg-[#EFEAE3]">
-          <Navbar />
-          <HeroSection />
-          <VideoSection />
-          <SliderSection />
-          <AboutCompany />
-          <FeaturesList />
-          <CompanyInfo />
-          <CardsSection />
+        <div className="w-full min-h-screen font-sans bg-[#EFEAE3]">
+          <header>
+            <Navbar />
+          </header>
+
+          <main className="flex flex-col">
+            <HeroSection />
+            <VideoSection />
+            <SliderSection />
+            <AboutCompany />
+            <FeaturesList />
+            <CompanyInfo />
+            <CardsSection />
+          </main>
+
           <Footer />
         </div>
       )}

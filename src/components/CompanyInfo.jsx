@@ -33,21 +33,21 @@ const CompanyInfo = () => {
   };
 
   return (
-    <div className="z-10 bg-[#EFEAE3] w-full px-6 py-10 flex flex-col items-start gap-10">
-     
-      <button className="relative w-40 h-12 border border-gray-400 rounded-3xl overflow-hidden group">
+    <div className="relative z-10 bg-[#EFEAE3] w-full px-4 sm:px-6 md:px-10 py-10 flex flex-col items-start gap-8">
+      {/* Button */}
+      <button className="relative w-32 sm:w-40 h-10 sm:h-12 border border-gray-400 rounded-3xl overflow-hidden group">
         <span className="absolute inset-0 bg-black translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out z-0" />
-        <span className="relative z-10 text-zinc-600 text-md font-bold group-hover:text-white transition-colors duration-300">
+        <span className="cursor-pointer relative z-10 text-zinc-600 text-sm sm:text-md font-bold group-hover:text-white transition-colors duration-300">
           All Projects →
         </span>
       </button>
 
-      
-      <div className="  w-full h-auto flex flex-col justify-center items-center md:flex-row  bg-black rounded-3xl gap-6">
-        
-        <div className=" m-10 flex flex-col justify-center items-start  space-y-3">
+      {/* Info Section */}
+      <div className="w-full flex flex-col md:flex-row bg-black rounded-3xl gap-6">
+        {/* Text Section */}
+        <div className="p-6 sm:p-10 flex flex-col justify-center items-start space-y-4 flex-1">
           <h1
-            className={`text-7xl text-start font-bold cursortext-2xl-pointer transition-colors duration-300 ${
+            className={`text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold cursor-pointer transition-colors duration-300 ${
               activeSection === "design"
                 ? "text-white"
                 : "text-zinc-600 hover:text-orange-500"
@@ -57,7 +57,7 @@ const CompanyInfo = () => {
             Design
           </h1>
           <h1
-            className={`text-7xl text-start font-bold cursor-pointer transition-colors duration-300 ${
+            className={`text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold cursor-pointer transition-colors duration-300 ${
               activeSection === "project"
                 ? "text-white"
                 : "text-zinc-600 hover:text-orange-500"
@@ -67,24 +67,27 @@ const CompanyInfo = () => {
             Project
           </h1>
           <h1
-            className={`text-7xl text-start font-bold cursor-pointer transition-colors duration-300 ${
+            className={`text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold cursor-pointer transition-colors duration-300 ${
               activeSection === "execution"
                 ? "text-white"
-                : "text-zinc-800 hover:text-orange-500"
+                : "text-zinc-600 hover:text-orange-500"
             }`}
             onClick={() => setActiveSection("execution")}
           >
             Execution
           </h1>
 
-          <p className="text-gray-400 max-w-xl">{getText()}</p>
+          <p className="text-gray-400 text-sm sm:text-base md:text-lg max-w-lg">
+            {getText()}
+          </p>
         </div>
 
-        <div className="w-full flex-1">
+        {/* Image Section */}
+        <div className="w-full md:w-1/2">
           <img
             src={getImage()}
             alt="Selected"
-            className="w-full h-full object-cover rounded-br-3xl md:rounded-tr-3xl md:rounded-br-3xl sm:rounded-tr-3xl sm:rounded-br-3xl shadow-md transition duration-300 ease-in-out"
+            className="w-full h-60 sm:h-80 md:h-full object-cover rounded-b-3xl md:rounded-r-3xl shadow-md transition duration-300 ease-in-out"
           />
         </div>
       </div>
