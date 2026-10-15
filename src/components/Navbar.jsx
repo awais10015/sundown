@@ -6,7 +6,7 @@ const Navbar = () => {
   const navItems = ["Work", "Studio", "Contact"];
 
   return (
-    <div className="relative bg-[#EFEAE3] z-20 p-6 w-full">
+    <div className="relative bg-[#EFEAE3] z-20 px-16 py-8 w-full">
       <div className="flex justify-between items-center w-full">
       
         {!isMenuOpen && (

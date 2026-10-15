@@ -9,6 +9,7 @@ import CompanyInfo from './components/CompanyInfo';
 import CardsSection from './components/CardsSection';
 import Footer from './components/Footer';
 import LoadingScreen from './components/LoadingScreen';
+import SmoothScrollLayout from './components/SmoothScrollLayout';
 
 function App() {
   const [showLoading, setShowLoading] = useState(true);
@@ -18,23 +19,25 @@ function App() {
       {showLoading ? (
         <LoadingScreen onFinish={() => setShowLoading(false)} />
       ) : (
-        <div className="w-full min-h-screen font-sans bg-[#EFEAE3]">
-          <header>
-            <Navbar />
-          </header>
+        <SmoothScrollLayout>
+          <div className="w-full min-h-screen font-sans bg-[#EFEAE3]">
+            <header>
+              <Navbar />
+            </header>
 
-          <main className="flex flex-col">
-            <HeroSection />
-            <VideoSection />
-            <SliderSection />
-            <AboutCompany />
-            <FeaturesList />
-            <CompanyInfo />
-            <CardsSection />
-          </main>
+            <main className="flex flex-col">
+              <HeroSection />
+              <VideoSection />
+              <SliderSection />
+              <AboutCompany />
+              <FeaturesList />
+              <CompanyInfo />
+              <CardsSection />
+            </main>
 
-          <Footer />
-        </div>
+            <Footer />
+          </div>
+        </SmoothScrollLayout>
       )}
     </>
   );

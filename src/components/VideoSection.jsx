@@ -3,12 +3,9 @@ import video from "../assets/videos/video.mp4";
 
 const VideoSection = () => {
   return (
-    <div className="relative z-10 bg-[#EFEAE3] w-full p-3 sm:p-5 overflow-hidden">
+    <div className="relative z-10 w-full h-svh bg-[#EFEAE3] px-3 sm:px-5">
       <video
-        className="
-          w-full max-w-full rounded-2xl sm:rounded-3xl object-cover
-          h-48 sm:h-72 md:h-[400px] lg:h-[500px]
-        "
+        className="h-full w-full object-cover rounded-2xl sm:rounded-3xl"
         src={video}
         autoPlay
         loop
